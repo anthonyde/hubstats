@@ -1,0 +1,11 @@
+{
+  "indentation": {
+    "_comment": "see https://github.com/clutchski/coffeelint/issues/4",
+    "value": 2,
+    "level": "warn"
+  },
+  "line_endings": {
+    "value": "unix",
+    "level": "error"
+  }
+}

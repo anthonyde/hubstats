@@ -1,0 +1,57 @@
+/*
+ * A CSS3 [ribbon] [1] for GitHub repositories
+ *
+ * This ribbon is inspired by Daniel Perez Alvarez's ribbon at
+ * <http://unindented.org/articles/2009/10/github-ribbon-using-css-transforms/>.
+ *
+ *   [1]: https://github.com/blog/273-github-ribbons [GitHub Ribbons]
+ */
+
+/* The font should be Collegiate, but a web font isn't available. */
+@import url("http://fonts.googleapis.com/css?family=Cabin Condensed:500");
+
+.github-ribbon {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  width: 149px;
+  height: 149px;
+}
+
+.github-ribbon a {
+  display: block;
+  position: relative;
+  top: 40px;
+  right: 10px;
+  width: 200px;
+  margin: 0;
+  padding: 2px 0 0 0;
+  border: 1px solid #a00;
+  font-family: "Cabin Condensed", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 4px #888;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  color: #fff;
+  background: #a00;
+  box-shadow: 0 0 8px #888;
+}
+
+/* Inner border */
+.github-ribbon a:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  z-index: -1;
+  border: 1px solid #c88;
+  content: "";
+}

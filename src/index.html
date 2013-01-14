@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GitHub Repository Statistics</title>
+
+    <link rel="stylesheet" href="ribbon.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script src="network.js"></script>
+    <script src="calendar.js"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        <li class="github-ribbon">
+          <a href="https://github.com/anthonyde/hubstats"
+            title="Fork me on GitHub">Fork me on GitHub</a>
+        </li>
+        <li>
+          View the annotated source:
+          <ul>
+            <li><a href="doc/calendar.html">calendar.coffee</a></li>
+            <li><a href="doc/index.html">index.coffee</a></li>
+            <li><a href="doc/network.html">network.coffee</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <section class="title">
+      <h1>GitHub Repository Statistics</h1>
+      <h2>Commits on master for
+        <a id="loginLink" title="View this user's profile on GitHub">[login]</a>
+        / <a id="repoLink" title="View this repository on GitHub">[repo]</a>
+      </h2>
+
+      <aside>
+        January 15, 2013
+      </aside>
+    </section>
+
+    <section>
+      <p id="status">
+        <noscript>JavaScript support is required to gather and display
+        repository information.</noscript>
+      </p>
+    </section>
+
+    <section id="chart"></section>
+
+    <section>
+      <form action="/" id="repoForm">
+        <label>Enter a GitHub login and a repository name:</label>
+        <input name="login" placeholder="e.g. anthonyde" required="true"
+          autofocus="true">
+        <label>/</label>
+        <input name="repo" placeholder="e.g. hubstats" required="true">
+        <input type="submit" value="Load">
+      </form>
+    </section>
+
+    <footer>
+      <aside>
+        Built with <a href="http://d3js.org/" title="D3">D3</a> and
+        <a href="http://jquery.com/" title="jQuery">jQuery</a>
+      </aside>
+    </footer>
+  </body>
+</html>

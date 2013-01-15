@@ -1,0 +1,50 @@
+svg {
+  font-size: 13px;
+  shape-rendering: crispedges;
+}
+
+.calendar, .legend, .year, .month {
+  transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+}
+
+.legend rect, .day {
+  transition: fill 0.5s, opacity 1s linear;
+  -moz-transition: fill 0.5s, opacity 1s linear;
+  -webkit-transition: fill 0.5s, opacity 1s linear;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+}
+
+.month-label {
+  text-anchor: middle;
+}
+
+.year text {
+  text-anchor: end;
+  dominant-baseline: middle;
+}
+
+.year-label {
+  font-weight: bold;
+}
+
+.month path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.month path.internal {
+  stroke: #ccc;
+  stroke-width: 1;
+}
+
+.day {
+  fill: #fff;
+  stroke-width: 0;
+}

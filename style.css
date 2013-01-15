@@ -1,0 +1,97 @@
+html {
+  min-width: 1040px;
+  border-top: 10px solid #6b699d;
+}
+
+body {
+  width: 960px;
+  margin: 1em auto 4em auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+h1, h2 {
+  margin: 0.3em 0 0.1em 0;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: 64px;
+  letter-spacing: -2px;
+}
+
+a {
+  text-decoration: none;
+  color: #6b699d;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+aside {
+  font-size: small;
+  text-align: right;
+  color: #444;
+}
+
+section {
+  margin-bottom: 1em;
+}
+
+/* Display lists in the header on one line. */
+header ul {
+  display: inline;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  list-style: none;
+}
+
+/* Separate top-level lists by '|'. */
+header ul li:not(:last-child):after {
+  content: " |";
+}
+
+header ul li.github-ribbon:after {
+  content: "";
+}
+
+/* Separate second-level lists by ','. */
+header ul li ul li:not(:last-child):after {
+  content: ",";
+}
+
+/* Change the color of the GitHub ribbon and remove the shadow. */
+.github-ribbon a {
+  border: 1px solid #6b699d;
+  background: #6b699d;
+  box-shadow: none;
+}
+
+.github-ribbon a:before {
+  border: 1px solid #8596bd;
+}
+
+.github-ribbon a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  position: relative;
+}
+
+.title aside {
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+}
+
+.title:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+}

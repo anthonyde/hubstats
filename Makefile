@@ -5,7 +5,7 @@ PYTHON := python
 
 COFFEE_SRC := $(wildcard src/*.coffee)
 COFFEE_OUT := $(COFFEE_SRC:src/%.coffee=build/%.js)
-COFFEE_DOC_OUT := $(COFFEE_SRC:src/%.coffee=build/doc/%.html)
+COFFEE_DOC_OUT := build/doc/docco.css $(COFFEE_SRC:src/%.coffee=build/doc/%.html)
 COPY_SRC := $(wildcard src/*.css) src/index.html
 COPY_OUT := $(COPY_SRC:src/%=build/%)
 PAGES_OUT := $(COFFEE_OUT) $(COPY_OUT) $(COFFEE_DOC_OUT)
